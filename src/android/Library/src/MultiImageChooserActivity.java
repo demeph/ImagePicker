@@ -147,9 +147,6 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
 
         GridView gridView = (GridView) findViewById(fakeR.getId("id", "gridview"));
         gridView.setOnItemClickListener(this);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
-            gridView.setPadding(0, 200 ,0, 0);
-        }
         gridView.setOnScrollListener(new OnScrollListener() {
             private int lastFirstItem = 0;
             private long timestamp = System.currentTimeMillis();
